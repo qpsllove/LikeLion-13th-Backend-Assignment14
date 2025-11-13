@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  forward-headers-strategy: framework
+
+spring:
+  profiles:
+    active: prod
+
+day:
+  api:
+    base-url: http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService
+    auth-key: ${CULTURE_API_KEY}
